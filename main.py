@@ -26,4 +26,16 @@ part_time_wage = wage_per_hour * part_time_hour
 print(f"Part-time Employee Wage: {part_time_wage}")
 
 
+# UC4: Solve using Switch Case
+def employee_wage(employee_type):
+    switcher = {
+        1: full_day_hour * wage_per_hour,  # Full-time employee
+        2: part_time_hour * wage_per_hour  # Part-time employee
+    }
+    return switcher.get(employee_type, 0)  # Default for absent
+
+employee_type = random.choice([0, 1, 2])  # 0: Absent, 1: Full-time, 2: Part-time
+print(f"Employee Wage (Switch Case): {employee_wage(employee_type)}")
+
+
 
