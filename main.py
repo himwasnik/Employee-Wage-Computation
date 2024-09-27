@@ -38,4 +38,8 @@ employee_type = random.choice([0, 1, 2])  # 0: Absent, 1: Full-time, 2: Part-tim
 print(f"Employee Wage (Switch Case): {employee_wage(employee_type)}")
 
 
+# UC5: Calculate Wages for a Month
+working_days_per_month = 20
+monthly_wage = working_days_per_month * daily_wage
+print(f"Monthly Employee Wage: {monthly_wage}")
 
