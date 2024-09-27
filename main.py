@@ -43,3 +43,17 @@ working_days_per_month = 20
 monthly_wage = working_days_per_month * daily_wage
 print(f"Monthly Employee Wage: {monthly_wage}")
 
+
+# UC6: Calculate Wages Till Condition
+max_hours_per_month = 100
+total_working_days = 0
+total_working_hours = 0
+
+while total_working_days < 20 and total_working_hours < max_hours_per_month:
+    hours_worked = random.choice([0, 4, 8])  # 0: Absent, 4: Part-time, 8: Full-time
+    total_working_hours += hours_worked
+    total_working_days += 1
+
+total_wage = total_working_hours * wage_per_hour
+print(f"Total Employee Wage for the Month: {total_wage}")
+
