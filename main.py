@@ -12,3 +12,9 @@ else:
     print("Employee is Absent")
 
 
+# UC2: Daily Employee Wage
+wage_per_hour = 20
+full_day_hour = 8
+daily_wage = wage_per_hour * full_day_hour
+print(f"Daily Employee Wage: {daily_wage}")
+
